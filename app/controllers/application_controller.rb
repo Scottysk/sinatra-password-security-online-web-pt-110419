@@ -35,9 +35,9 @@ end
     
 		if user && user.authenticate(params[:password])
 			session[:id] = user.id
-			redirect "/success"
+			redirect '/success'
 		else
-			redirect "/failure"
+			redirect '/failure'
 		end 
   end
 
